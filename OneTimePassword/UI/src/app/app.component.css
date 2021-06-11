@@ -1,0 +1,20 @@
+.component-wrapper{
+    width:900px;
+    margin:auto;
+    background-color: #f2f2f2;
+    min-height:100%;
+}
+.inline-element{
+    display: inline-flex;
+    margin-right:20px;
+    margin-bottom:30px;
+}
+.btn{
+    background:white;
+    border-radius:4px;
+    border:1px solid black;
+    cursor:pointer;
+}
+.btn:hover{
+    background: #f2f2f2;
+}

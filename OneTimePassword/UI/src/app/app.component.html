@@ -1,0 +1,21 @@
+<div class="component-wrapper">
+  <h3>OTP for users</h3>
+  <div>
+    <div style="font-size: 1.2em; margin-bottom: 20px;">User List</div>
+    <div *ngFor="let user of userList">
+      <div style="display: flexbox;">
+        <div class="inline-element">User: {{user.id}}</div>
+        <div class="inline-element">
+          <button class="btn" (click)="generatePasswordForUser(user)">Generate
+            Password</button>
+        </div>
+
+        <div *ngIf="user.password != null && user.password.isDisplayed != false" class="inline-element">
+          <div class="inline-element">{{user.password.accessCode}}</div>
+          <div class="inline-element">Time remaining: {{user.password.remainingTime}} s</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
